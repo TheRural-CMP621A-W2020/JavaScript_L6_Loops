@@ -1,0 +1,86 @@
+<DOCTYPE! html>
+<html>
+
+<head>
+</head>
+
+<body>
+<!-- While Loops ----------------------------------------------------------------- -->
+<h1>While Loops</h1>
+<p>While loops in JavaScript are the same as python.  They will repeat the execution of 
+code provided the set condition is met.  The syntax for While loops in JavaScript is shown
+below.  </p>
+
+while (condition)  {  	<br>
+	code to execute;		<br>
+	code to execute;	<br>
+	code to execute;		<br>
+	}					<br>
+<br>
+<br>
+<br>
+function While1Function()  {		<br>
+			var i=0;				<br>
+									<br>
+			while (i<=10)  {		<br>
+			document.getElementById("WhileLoop1").innerHTML+="The i is "+i+"&lt;br&gt;";	<br>
+			i++;	//increases i by 1, equivalent to i=i+1				<br>
+							}		<br>
+									}<br>
+									<br>
+<button onclick="While1Function()">Click here to see the results of the above script.</button>
+<div id="WhileLoop1">
+</div>	
+	<script>
+		function While1Function()  {
+			var i=0;
+
+			while (i<=10)  {
+			document.getElementById("WhileLoop1").innerHTML+="The i is "+i+"<br>";  //writes the line
+			i++;  //increases i by 1, equivalent to i=i+1
+							}
+									}
+									
+	</script>
+
+<!-- For Loops ----------------------------------------------------------------- -->
+<h1>For Loops</h1>
+<p>For loops in JavaScript are different than python.  Instead of reapeating the execution of
+code a set number of times (example: for x in range (6)), they will repeat the execution of 
+code based on a condition.  The syntax for For loops in JavaScript is shown below.  </p>
+
+for (intial value; condition; increase/decrease)  {  	<br>
+	code to execute;		<br>
+	code to execute;	<br>
+	code to execute;		<br>
+	}					<br>
+<br>
+<br>
+<br>
+function For1Function()  {		<br>
+								<br>
+								<br>
+			for (var i=0; i<=10; i+=2)  {		<br>
+			document.getElementById("ForLoop1").innerHTML+="The i is "+i+"&lt;br&gt;";	<br>
+								<br>
+							}		<br>
+									}<br>
+									<br>
+<button onclick="For1Function()">Click here to see the results of the above script.</button>
+<div id="ForLoop1">
+</div>	
+	<script>
+		function For1Function() {
+			
+
+			for (var i=0; i<=10; i+=2)   	{
+			document.getElementById("ForLoop1").innerHTML+="The i is "+i+"<br>";  //writes the line
+											}
+								}
+									
+	</script>
+
+
+</body>
+
+</html>
